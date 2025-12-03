@@ -23,7 +23,18 @@ main {
   border-radius: 0.5rem;
   border: 3px solid #8e3a52; /* Camelot Purple border */
 }
+.intro-layout {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 2rem;
+}
 
+.intro-text {
+  max-width: 700px;
+  text-align: center;
+}
 /* Title aesthetic */
 .site-title {
   margin: 0;
@@ -33,6 +44,10 @@ main {
   font-weight: bold;
 }
 
+.top-places-box {
+  margin: 2rem;
+  text-align: center;
+}
 /* location card style */
 .location-card {
   display: flex;
@@ -49,6 +64,14 @@ main {
 
 .location-p {
   max-width: 450px;
+}
+
+.page-button {
+  width: 220px;
+  height: 30px;
+  background-color: #d5603f; /* Damask Orange */
+  color: #fff;
+  border: none;
 }
 
 /* changed color palette to make it more vibrant/less corprate boring */
