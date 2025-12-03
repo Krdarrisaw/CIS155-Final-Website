@@ -46,7 +46,12 @@ main {
   max-width: 250px;
   margin-left: 1rem;
 }
-/* Navigation uses earthy adventurous tones */
+
+.location-p {
+  max-width: 450px;
+}
+
+/* changed color palette to make it more vibrant/less corprate boring */
 nav {
   background-color: #56202d; /* Wine Berry */
   display: flex;
@@ -83,7 +88,8 @@ footer {
   text-align: center;
   padding: 1rem 0;
   font-size: 0.9rem;
-  color: #56202d;
+  background-color: #56202d;
+  color: #ffdeb1;
 }
 
 /* Highlight tags or headings */
