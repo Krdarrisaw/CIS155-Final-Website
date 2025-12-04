@@ -122,6 +122,7 @@ nav {
   background-color: #d5603f; /* Damask Orange */
   color: #fff;
   border: none;
+  border-radius: 0.5rem;
 }
 
 /* Footer in earthy tone */
@@ -177,15 +178,14 @@ img {
   margin-top: 2rem;
 }
 
-/* “Card” style columns */
+/* Journal-style cards for Tokyo sections */
 .tokyo-column {
   flex: 1 1 280px;
-  padding: 2rem;
-  background: linear-gradient(180deg, #ffefda, #ffe6c9);
+  padding: 1rem;
+  background-color: #fff4e3; /* parchment */
   color: #56202d;
   border-radius: 0.5rem;
   border: 2px solid #8e3a52;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
 }
 
 .tokyo-column p {
@@ -204,16 +204,6 @@ img {
   background-color: #fff4e3;
   border-left: 10px solid #767e0f; /* Earth Green */
   border-radius: 0.5rem;
-}
-
-/* Journal-style cards for Tokyo sections */
-.tokyo-column {
-  flex: 1 1 280px;
-  padding: 1rem;
-  background-color: #fff4e3; /* parchment */
-  color: #56202d;
-  border-radius: 0.5rem;
-  border: 2px solid #8e3a52;
 }
 
 .trip-overview h2 {
@@ -293,7 +283,6 @@ img {
   margin: 2rem 0 2.5rem;
 }
 
-/* Longer-term notes block */
 .long-notes {
   padding: 1.75rem;
   background-color: #fff4e3;
@@ -320,7 +309,30 @@ img {
   border: 2px solid #d5603f;
 }
 
-/* Mobile */
+/* Bali page styles */
+
+.bali-layout {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.bali-column {
+  flex: 1 1 280px;
+  padding: 2rem;
+  background: linear-gradient(180deg, #ffefda, #ffe6c9);
+  color: #56202d;
+  border-radius: 0.5rem;
+  border: 2px solid #8e3a52;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.bali-column p {
+  line-height: 1.75;
+}
+
+/* Mobile Responsive Design*/
 @media (max-width: 900px) {
   main {
     width: 94%;
