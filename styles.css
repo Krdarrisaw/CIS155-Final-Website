@@ -23,56 +23,6 @@ main {
   border-radius: 0.5rem;
   border: 3px solid #8e3a52; /* Camelot Purple border */
 }
-.intro-layout {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 2rem;
-}
-
-.intro-text {
-  max-width: 700px;
-  text-align: center;
-}
-/* Title aesthetic */
-.site-title {
-  margin: 0;
-  padding: 1rem 0;
-  text-align: center;
-  color: #8e3a52; /* Camelot Purple */
-  font-weight: bold;
-}
-
-.top-places-box {
-  margin: 2rem;
-  text-align: center;
-}
-/* location card style */
-.location-card {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-around;
-  margin-top: 1.5rem;
-}
-
-.location-card-tex-box {
-  max-width: 250px;
-  margin-left: 1rem;
-}
-
-.location-p {
-  max-width: 450px;
-}
-
-.page-button {
-  width: 220px;
-  height: 30px;
-  background-color: #d5603f; /* Damask Orange */
-  color: #fff;
-  border: none;
-}
 
 /* changed color palette to make it more vibrant/less corprate boring */
 nav {
@@ -106,6 +56,74 @@ nav {
   background-color: #d5603f; /* Damask Orange */
 }
 
+.intro-layout {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.intro-text {
+  max-width: 700px;
+  text-align: center;
+}
+/* Title aesthetic */
+.site-title {
+  margin: 0;
+  padding: 1rem 0;
+  text-align: center;
+  color: #8e3a52; /* Camelot Purple */
+  font-weight: bold;
+}
+
+.top-places {
+  margin-top: 2.5rem;
+  margin-bottom: 2rem;
+  padding: 1.25rem 1.5rem;
+  background-color: #fff4e3;
+  border-left: 10px solid #767e0f; /* Earth Green */
+  border-radius: 0.5rem;
+  text-align: center;
+}
+
+.top-places h2 {
+  margin-top: 0;
+  margin-bottom: 0.25rem;
+  color: #8e3a52;
+}
+
+.top-places-box {
+  text-align: center;
+  margin-top: 3rem;
+  margin-bottom: 0.5rem;
+}
+/* location card style */
+.location-card {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 1.5rem;
+}
+
+.location-card-tex-box {
+  max-width: 250px;
+  margin-left: 1rem;
+}
+
+.location-p {
+  max-width: 450px;
+}
+
+.page-button {
+  width: 220px;
+  height: 30px;
+  background-color: #d5603f; /* Damask Orange */
+  color: #fff;
+  border: none;
+}
+
 /* Footer in earthy tone */
 footer {
   text-align: center;
@@ -113,15 +131,6 @@ footer {
   font-size: 0.9rem;
   background-color: #56202d;
   color: #ffdeb1;
-}
-
-/* Highlight tags or headings */
-.highlight {
-  background-color: #d5603f; /* Damask Orange */
-  padding: 0.25rem 0.5rem;
-  font-weight: 600;
-  color: #ffdeb1; /* soft peach */
-  border-left: 0.5em solid #767e0f; /* Earth Green accent */
 }
 
 /* H2 heading aesthetics */
@@ -139,7 +148,7 @@ img {
   border-radius: 0.4rem;
 }
 
-/* Photo grid section (NEW) */
+/* Photo grid section */
 .photo-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
@@ -152,7 +161,7 @@ img {
   border-radius: 0.6rem;
 }
 
-/* Flex sections keep the new palette */
+/* Tokoyo layout Section */
 .intro-layout,
 .tokyo-layout {
   display: flex;
@@ -161,11 +170,69 @@ img {
   align-items: center;
 }
 
+.tokyo-layout {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+/* “Card” style columns */
+.tokyo-column {
+  flex: 1 1 280px;
+  padding: 2rem;
+  background: linear-gradient(180deg, #ffefda, #ffe6c9);
+  color: #56202d;
+  border-radius: 0.5rem;
+  border: 2px solid #8e3a52;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.tokyo-column p {
+  line-height: 1.75;
+}
+
+.tokyo-column h2 {
+  margin-top: 0;
+  color: #8e3a52;
+}
+
+/* Trip overview section style, this style is applied to all of the sub pages*/
+.trip-overview {
+  margin: 2rem 0;
+  padding: 1.25rem 1.5rem;
+  background-color: #fff4e3;
+  border-left: 10px solid #767e0f; /* Earth Green */
+  border-radius: 0.5rem;
+}
+
+.trip-overview h2 {
+  margin-top: 0;
+  font-size: 1.4rem;
+  color: #8e3a52;
+}
+
+.tokyo-column,
+.trip-overview {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.09);
+}
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.hero-image {
+  max-width: 100%;
+  height: auto;
+}
 /* Journal-style cards for Tokyo sections */
 .tokyo-column {
   flex: 1 1 280px;
   padding: 1rem;
-  background-color: #ffdeb1; /* parchment */
+  background-color: #fff4e3; /* parchment */
   color: #56202d;
   border-radius: 0.5rem;
   border: 2px solid #8e3a52;
